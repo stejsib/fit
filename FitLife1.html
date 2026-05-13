@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+
+
+
+<html lang="sq">
+
+
+
+<head>
+
+
+
+<meta charset="UTF-8">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>FitLife | Fitness & Health</title>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+
+
+/* RESET */
+
+
+
+*{
+
+
+
+    margin:0;
+
+
+
+    padding:0;
+
+
+
+    box-sizing:border-box;
+
+
+
+}
+
+
+
+body{
+
+
+
+    font-family:'Poppins',sans-serif;
+
+
+
+    background:#f5fff7;
+
+
+
+    color:#222;
+
+
+
+}
+
+
+
+/* NAV */
+
+
+
+nav{
+
+
+
+    display:flex;
+
+
+
+    justify-content:space-between;
+
+
+
+    align-items:center;
+
+
+
+    padding:20px 60px;
+
+
+
+    background:#1e8f4d;
+
+
+
+    color:white;
+
+
+
+    position:fixed;
+
+
+
+    width:100%;
+
+
+
+    top:0;
+
+
+
+    z-index:1000;
+
+
+
+}
+
+
+
+.logo{
+
+
+
+    font-size:30px;
+
+
+
+    font-weight:700;
+
+
+
+}
+
+
+
+nav ul{
+
+
+
+    display:flex;
+
+
+
+    gap:25px;
+
+
+
+    list-style:none;
+
+
+
+}
+
+
+
+nav ul li a{
+
+
+
+    text-decoration:none;
+
+
+
+    color:white;
+
+
+
+}
+
+
+
+/* ABOUT */
+
+
+
+.about{
+
+
+
+    padding:120px 20px 40px;
+
+
+
+    text-align:center;
+
+
+
+    max-width:800px;
+
+
+
+    margin:auto;
+
+
+
+}
+
+
+
+.about h2{
+
+
+
+    font-size:40px;
+
+
+
+    color:#1e8f4d;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+.about p{
+
+
+
+    font-size:18px;
+
+
+
+    line-height:1.6;
+
+
+
+    margin-bottom:15px;
+
+
+
+}
+
+
+
+.about h3{
+
+
+
+    margin-top:20px;
+
+
+
+    color:#146837;
+
+
+
+}
+
+
+
+/* GOAL */
+
+
+
+.goal{
+
+
+
+    padding:80px 20px;
+
+
+
+    text-align:center;
+
+
+
+}
+
+
+
+.goal h2{
+
+
+
+    font-size:35px;
+
+
+
+    color:#1e8f4d;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+#plans{
+
+
+
+    margin-top:20px;
+
+
+
+    max-width:700px;
+
+
+
+    margin-left:auto;
+
+
+
+    margin-right:auto;
+
+
+
+}
+
+
+
+/* HERO */
+
+
+
+header{
+
+
+
+    height:100vh;
+
+
+
+    background:
+
+
+
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+
+
+
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80');
+
+
+
+    background-size:cover;
+
+
+
+    background-position:center;
+
+
+
+    display:flex;
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    text-align:center;
+
+
+
+    color:white;
+
+
+
+}
+
+
+
+.hero h1{
+
+
+
+    font-size:80px;
+
+
+
+}
+
+
+
+.hero p{
+
+
+
+    font-size:24px;
+
+
+
+    margin-top:10px;
+
+
+
+}
+
+
+
+/* BMI */
+
+
+
+.calculator{
+
+
+
+    padding:100px 20px;
+
+
+
+    text-align:center;
+
+
+
+}
+
+
+
+.calculator h2{
+
+
+
+    font-size:45px;
+
+
+
+    color:#1e8f4d;
+
+
+
+    margin-bottom:30px;
+
+
+
+}
+
+
+
+form{
+
+
+
+    max-width:500px;
+
+
+
+    margin:auto;
+
+
+
+    background:white;
+
+
+
+    padding:30px;
+
+
+
+    border-radius:20px;
+
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+input,
+
+
+
+select{
+
+
+
+    width:100%;
+
+
+
+    padding:14px;
+
+
+
+    margin:10px 0;
+
+
+
+    border-radius:10px;
+
+
+
+    border:1px solid #ccc;
+
+
+
+}
+
+
+
+button{
+
+
+
+    background:#1e8f4d;
+
+
+
+    color:white;
+
+
+
+    border:none;
+
+
+
+    padding:15px 30px;
+
+
+
+    border-radius:10px;
+
+
+
+    font-size:17px;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:0.3s;
+
+
+
+}
+
+
+
+button:hover{
+
+
+
+    background:#146837;
+
+
+
+}
+
+
+
+#result{
+
+
+
+    margin-top:25px;
+
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+/* CONTACT */
+
+
+
+.contact{
+
+
+
+    padding:100px 20px;
+
+
+
+    text-align:center;
+
+
+
+    background:#eaffef;
+
+
+
+}
+
+
+
+.contact h2{
+
+
+
+    font-size:40px;
+
+
+
+    color:#1e8f4d;
+
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+/* FOOTER */
+
+
+
+footer{
+
+
+
+    background:#111;
+
+
+
+    color:white;
+
+
+
+    text-align:center;
+
+
+
+    padding:25px;
+
+
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+@media(max-width:768px){
+
+
+
+    nav{
+
+
+
+        flex-direction:column;
+
+
+
+        gap:10px;
+
+
+
+        padding:20px;
+
+
+
+    }
+
+
+
+    nav ul{
+
+
+
+        flex-direction:column;
+
+
+
+        text-align:center;
+
+
+
+    }
+
+
+
+    .hero h1{
+
+
+
+        font-size:45px;
+
+
+
+    }
+
+
+
+    .hero p{
+
+
+
+        font-size:18px;
+
+
+
+    }
+
+
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAV -->
+
+
+
+<nav>
+
+
+
+<div class="logo">🏋️ FitLife</div>
+
+
+
+<ul>
+
+
+
+<li><a href="#goal">Plane</a></li>
+
+
+
+<li><a href="#calculator">BMI</a></li>
+
+
+
+<li><a href="#contact">Kontakt</a></li>
+
+
+
+</ul>
+
+
+
+</nav>
+
+
+
+<!-- ABOUT -->
+
+
+
+<section class="about">
+
+
+
+    <h2>Rreth FitLife</h2>
+
+
+
+    <p>
+
+
+
+        FitLife është krijuar për të të ndihmuar të arrish trupin dhe stilin e jetës që dëshiron.
+
+
+
+        Nuk ka rëndësi ku je tani — e rëndësishme është të fillosh.
+
+
+
+    </p>
+
+
+
+    <p>
+
+
+
+        Ne ofrojmë plane ushqimi dhe këshilla fitnessi të thjeshta, të përditshme dhe të realizueshme.
+
+
+
+    </p>
+
+
+
+    <h3>“Disiplina sot = rezultate nesër 💪”</h3>
+
+
+
+</section>
+
+
+
+<!-- GOAL SELECTOR -->
+
+
+
+<section class="goal" id="goal">
+
+
+
+    <h2>Zgjidh Qëllimin Tënd</h2>
+
+
+
+    <select id="goalSelect" onchange="showPlans()">
+
+
+
+        <option value="">-- Zgjidh --</option>
+
+
+
+        <option value="lose">Humbje peshe 🔥</option>
+
+
+
+        <option value="gain">Shtim peshe 💪</option>
+
+
+
+    </select>
+
+
+
+    <div id="plans"></div>
+
+
+
+</section>
+
+
+
+<!-- HERO -->
+
+
+
+<header>
+
+
+
+<div class="hero">
+
+
+
+<div>
+
+
+
+<h1>FitLife</h1>
+
+
+
+<p>Fitness • Health • Diet 🍎</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</header>
+
+
+
+<!-- BMI -->
+
+
+
+<section class="calculator" id="calculator">
+
+
+
+<h2>BMI & Diet Planner</h2>
+
+
+
+<form>
+
+
+
+<input type="number" id="age" placeholder="Mosha">
+
+
+
+<select id="gender">
+
+
+
+<option>Femër</option>
+
+
+
+<option>Mashkull</option>
+
+
+
+</select>
+
+
+
+<input type="number" id="height" placeholder="Gjatesia (cm)">
+
+
+
+<input type="number" id="weight" placeholder="Pesha (kg)">
+
+
+
+<button type="button" onclick="calculateBMI()">
+
+
+
+Llogarit
+
+
+
+</button>
+
+
+
+<div id="result"></div>
+
+
+
+</form>
+
+
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+
+
+<section class="contact" id="contact">
+
+
+
+<h2>Na Kontaktoni</h2>
+
+
+
+<form action="https://formsubmit.co/stejsi2222222gjergj@gmail.com" method="POST">
+
+
+
+<input type="text" placeholder="Emri" required>
+
+
+
+<input type="email" placeholder="Email" required>
+
+
+
+<textarea
+
+
+
+placeholder="Mesazhi juaj"
+
+
+
+style="width:100%;height:150px;padding:15px;border-radius:10px;border:1px solid #ccc;margin-top:10px;">
+
+
+
+</textarea>
+
+
+
+<button type="submit">Dërgo</button>
+
+
+
+</form>
+
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+
+
+<footer>
+
+
+
+© 2026 FitLife 🏋️
+
+
+
+<br><br>
+
+
+
+<img src="https://www.hitwebcounter.com/counter/counter.php?page=21497800&style=0006&nbdigits=5&type=page"
+
+
+
+alt="views"/>
+
+
+
+<p>👀 Vizitorë</p>
+
+
+
+</footer>
+
+
+
+<!-- JS -->
+
+
+
+<script>
+
+
+
+/* BMI */
+
+
+
+function calculateBMI(){
+
+
+
+    let height = document.getElementById("height").value / 100;
+
+
+
+    let weight = document.getElementById("weight").value;
+
+
+
+    let bmi = (weight / (height * height)).toFixed(1);
+
+
+
+    let result = "";
+
+
+
+    if(bmi < 18.5){
+
+
+
+        result = "Nën peshë ⚠️<br>Dietë më shumë proteina 🍌";
+
+
+
+    }
+
+
+
+    else if(bmi < 25){
+
+
+
+        result = "Peshë normale ✅<br>Dietë e balancuar 🥗";
+
+
+
+    }
+
+
+
+    else{
+
+
+
+        result = "Mbipeshë ⚠️<br>Më pak sheqer 🍎";
+
+
+
+    }
+
+
+
+    document.getElementById("result").innerHTML =
+
+
+
+    "BMI: " + bmi + "<br><br>" + result;
+
+
+
+}
+
+
+
+/* PLANS */
+
+
+
+function showPlans(){
+
+
+
+    let goal = document.getElementById("goalSelect").value;
+
+
+
+    let plans = document.getElementById("plans");
+
+
+
+    if(goal === "lose"){
+
+
+
+        plans.innerHTML = `
+
+
+
+        <h3>Plan për Humbje Peshe 🔥</h3>
+
+
+
+        <p>🥗 Kos + banane<br>🍗 Pulë + oriz<br>🥚 Vezë në darkë</p>
+
+
+
+        <button onclick="alert('Plani u porosit! 📩')">Porosit Planin</button>
+
+
+
+        `;
+
+
+
+    }
+
+
+
+    else if(goal === "gain"){
+
+
+
+        plans.innerHTML = `
+
+
+
+        <h3>Plan për Shtim Peshe 💪</h3>
+
+
+
+        <p>🥛 Smoothie + gjalp kikiriku<br>🍝 Makarona + mish<br>🥪 Snack kalorik</p>
+
+
+
+        <button onclick="alert('Plani u porosit! 📩')">Porosit Planin</button>
+
+
+
+        `;
+
+
+
+    }
+
+
+
+    else{
+
+
+
+        plans.innerHTML = "";
+
+
+
+    }
+
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
